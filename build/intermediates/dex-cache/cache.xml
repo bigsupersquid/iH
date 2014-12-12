@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/ack/Downloads/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/home/ack/workspace/iHeat1/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-6ec66e7642090c55a8968a6eba892464202e9c21.jar" />
+    </item>
+    <item
+        jar="/home/ack/workspace/iHeat1/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/home/ack/workspace/iHeat1/app/build/intermediates/pre-dexed/debug/classes-2cbefd1068071f8ce82c7fec3fdddacc7c2a40e5.jar" />
+    </item>
+    <item
+        jar="/home/ack/workspace/iHeat1/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/home/ack/workspace/iHeat1/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-04710c406ede4dc0a4e1d08206aff1b2d2e31a20.jar" />
+    </item>
+
+</items>

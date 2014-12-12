@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ih.iheat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--	<uses-permission android:name="android.permission.NET_ADMIN" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActivityThemeNoActionBar">
+        <activity
+            android:name="Splash"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.HOME" />
+				<category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="homeact" android:screenOrientation="landscape"></activity>
+        <receiver android:name="startbro" android:enabled="true"
+            android:exported="true"><intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter></receiver>
+        <service android:name="starterserv"></service>
+        <activity android:name="resultact" android:screenOrientation="landscape"></activity>
+        <activity android:name="loginact" android:screenOrientation="landscape"></activity>
+        <activity android:name="loginsuccessact" android:screenOrientation="landscape"></activity>
+        <activity android:name="viewdevicesact" android:screenOrientation="landscape"></activity>
+        <activity android:name="devpasswordact" android:screenOrientation="landscape"></activity>
+        <activity android:name="settingact" android:screenOrientation="landscape"></activity>
+        <activity android:name="roomsact" android:screenOrientation="landscape"></activity>
+        <activity android:name="oneroomact" android:screenOrientation="landscape"></activity>
+        <activity android:name="tworoomact" android:screenOrientation="landscape"></activity>
+        <activity android:name="fourroomact" android:screenOrientation="landscape"></activity>
+        <activity android:name="threeroomact" android:screenOrientation="landscape"></activity>
+        <activity android:name="fiveroomact" android:screenOrientation="landscape"></activity>
+        <activity android:name="sixroomact" android:screenOrientation="landscape"></activity>
+        <activity android:name="roomdetailact" android:screenOrientation="landscape"></activity>
+	</application>application>
+</manifest>

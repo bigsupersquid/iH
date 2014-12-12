@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="214dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="a"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:background="@drawable/coldroom4" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:background="@drawable/coldroom4" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_alignLeft="@+id/textView2" android:background="@drawable/coldroom4"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView2"
+        android:background="@drawable/coldroom4" />
+
+    <TextView
+        android:id="@+id/textViewTempRoom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/imageViewSetup"
+        android:text="19"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/TextViewTemp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTempRoom1"
+        android:layout_alignBottom="@+id/textViewTempRoom1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginLeft="29dp"
+        android:text="19"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/imageViewDegree1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewTempRoom1"
+        android:layout_toRightOf="@+id/textViewTempRoom1"
+        android:src="@drawable/degree" />
+
+    <ImageView
+        android:id="@+id/ImageViewDegree2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextViewTemp2"
+        android:layout_toRightOf="@+id/TextViewTemp2"
+        android:src="@drawable/degree" />
+
+    <ImageView
+        android:id="@+id/ImageViewDegree3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextViewTemp3"
+        android:layout_toRightOf="@+id/TextViewTemp3"
+        android:src="@drawable/degree" />
+
+    <ImageView
+        android:id="@+id/ImageViewDegree4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageViewDegree3"
+        android:layout_alignTop="@+id/TextViewTemp4"
+        android:src="@drawable/degree" />
+
+    <TextView
+        android:id="@+id/TextViewCent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewTemp2"
+        android:layout_alignBottom="@+id/TextViewTemp2"
+        android:layout_toRightOf="@+id/TextViewTemp2"
+        android:text="Centigrade"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textViewCent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTempRoom1"
+        android:layout_alignBottom="@+id/textViewTempRoom1"
+        android:layout_toRightOf="@+id/textViewTempRoom1"
+        android:text="Centigrade"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textViewRoomTemp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewTempRoom1"
+        android:layout_alignLeft="@+id/textViewTempRoom1"
+        android:text="Room Temperature"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/TextViewRoomTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewTemp2"
+        android:layout_alignLeft="@+id/TextViewTemp2"
+        android:text="Room Temperature"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/TextViewCent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewTemp3"
+        android:layout_alignBottom="@+id/TextViewTemp3"
+        android:layout_alignLeft="@+id/ImageViewDegree3"
+        android:text="Centigrade"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/TextViewCent4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextViewRoomTemp2"
+        android:layout_toRightOf="@+id/TextViewTemp4"
+        android:text="Centigrade"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/TextViewRoomTemp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewTemp3"
+        android:layout_alignRight="@+id/TextViewCent3"
+        android:text="Room Temperature"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/TextViewRoomTemp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextViewCent4"
+        android:layout_below="@+id/TextViewCent4"
+        android:text="Room Temperature"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textViewOnOff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewCent1"
+        android:layout_below="@+id/textViewCent1"
+        android:text="Heating Off"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextViewOnOff2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextViewCent2"
+        android:layout_below="@+id/TextViewTemp2"
+        android:text="Heating Off"
+        android:textAppearance="?android:attr/textAppearanceSmall"  android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/TextViewOnOff3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextViewRoomTemp3"
+        android:layout_below="@+id/TextViewTemp3"
+        android:text="Heating Off"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/TextViewOnOff4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewOnOff2"
+        android:layout_alignBottom="@+id/TextViewOnOff2"
+        android:layout_alignRight="@+id/TextViewRoomTemp4"
+        android:text="Heating Off"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageViewSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/setup_button_small" />
+
+    <TextView
+        android:id="@+id/TextViewTemp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/ImageViewDegree4"
+        android:text="19"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/TextViewTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewTemp4"
+        android:layout_alignBottom="@+id/TextViewTemp4"
+        android:layout_alignLeft="@+id/textViewTempRoom1"
+        android:text="19"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50dp" />
+
+    </RelativeLayout>
+<!-- From: file:/home/ack/workspace/iHeat1/app/src/main/res/layout-w432dp-h234dp-land/fourroomlayout.xml -->
