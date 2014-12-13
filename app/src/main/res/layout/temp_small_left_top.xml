@@ -4,7 +4,7 @@
     android:layout_height="fill_parent" >
 
     <ImageView
-        android:id="@+id/imageViewBox"
+        android:id="@+id/imageViewBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -14,11 +14,11 @@
         android:src="@drawable/top_small" />
 
     <ImageView
-        android:id="@+id/imageViewBar"
+        android:id="@+id/imageViewBar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageViewBox"
-        android:layout_alignRight="@+id/imageViewBox"
+        android:layout_below="@+id/imageViewBox1"
+        android:layout_alignRight="@+id/imageViewBox1"
         android:layout_marginTop="8px"
         android:src="@drawable/bottom_small" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/imageViewDegree1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageViewBox"
+        android:layout_alignTop="@+id/imageViewBox1"
         android:layout_marginTop="24px"
         android:layout_alignLeft="@+id/textViewTemp1"
         android:layout_marginLeft="76px"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewTemp1"
         android:layout_alignBottom="@+id/textViewTemp1"
-        android:layout_alignLeft="@+id/imageViewBox"
+        android:layout_alignLeft="@+id/imageViewBox1"
         android:layout_marginLeft="120px"
         android:text="Centigrade"
         android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -47,20 +47,20 @@
         android:id="@+id/textViewRoomTemp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageViewBox"
-        android:layout_alignLeft="@+id/imageViewBox"
+        android:layout_alignBottom="@+id/imageViewBox1"
+        android:layout_alignLeft="@+id/imageViewBox1"
         android:layout_marginLeft="54px"
         android:layout_marginBottom="8px"
         android:text="Room Temperature"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/textViewOnOff"
+        android:id="@+id/textViewOnOff1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageViewBar"
-        android:layout_alignLeft="@+id/imageViewBar"
+        android:layout_alignTop="@+id/imageViewBar1"
+        android:layout_alignLeft="@+id/imageViewBar1"
         android:layout_marginTop="8px"
         android:layout_marginLeft="64px"
         android:layout_centerHorizontal="true"
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textViewRoomTemp1"
-        android:layout_alignTop="@+id/imageViewBox"
+        android:layout_alignTop="@+id/imageViewBox1"
         android:layout_marginTop="16px"
         android:layout_marginRight="80px"
         android:text="19"

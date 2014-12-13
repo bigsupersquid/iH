@@ -9,9 +9,15 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.graphics.Matrix;
 import android.widget.ImageView.ScaleType;
+import android.widget.TextView;
 
 public class fiveroomact extends Activity {
 	ImageView iv[]=new ImageView[5];
+    ImageView degree[]=new ImageView[5];
+    TextView onoff[]=new TextView[5];
+    TextView temp[]=new TextView[5];
+    TextView cent[]=new TextView[5];
+    TextView roomtemp[]=new TextView[5];
 	ImageView setup;
 	String email;
     @Override
@@ -21,10 +27,39 @@ public class fiveroomact extends Activity {
 		setContentView(R.layout.fiveroomlayout);
 
 		iv[0]=(ImageView)findViewById(R.id.imageView1);
-		iv[1]=(ImageView)findViewById(R.id.imageView2);
+        degree[0]=(ImageView)findViewById(R.id.imageViewDegree1);
+        onoff[0]=(TextView)findViewById(R.id.textViewOnOff1);
+        temp[0]=(TextView)findViewById(R.id.textViewTempRoom1);
+        cent[0]=(TextView)findViewById(R.id.textViewCent1);
+        roomtemp[0]=(TextView)findViewById(R.id.textViewRoomTemp1);
+
+        iv[1]=(ImageView)findViewById(R.id.imageView2);
+        degree[1]=(ImageView)findViewById(R.id.imageViewDegree2);
+        onoff[1]=(TextView)findViewById(R.id.textViewOnOff2);
+        temp[1]=(TextView)findViewById(R.id.textViewTemp2);
+        cent[1]=(TextView)findViewById(R.id.textViewCent2);
+        roomtemp[1]=(TextView)findViewById(R.id.textViewRoomTemp2);
+
 		iv[2]=(ImageView)findViewById(R.id.imageView3);
+        degree[2]=(ImageView)findViewById(R.id.imageViewDegree3);
+        onoff[2]=(TextView)findViewById(R.id.textViewOnOff3);
+        temp[2]=(TextView)findViewById(R.id.textViewTemp3);
+        cent[2]=(TextView)findViewById(R.id.textViewCent3);
+        roomtemp[2]=(TextView)findViewById(R.id.textViewRoomTemp3);
+
 		iv[3]=(ImageView)findViewById(R.id.imageView4);
+        degree[3]=(ImageView)findViewById(R.id.imageViewDegree4);
+        onoff[3]=(TextView)findViewById(R.id.textViewOnOff4);
+        temp[3]=(TextView)findViewById(R.id.textViewTemp4);
+        cent[3]=(TextView)findViewById(R.id.textViewCent4);
+        roomtemp[3]=(TextView)findViewById(R.id.textViewRoomTemp4);
+
 		iv[4]=(ImageView)findViewById(R.id.imageView5);
+        degree[4]=(ImageView)findViewById(R.id.imageViewDegree5);
+        onoff[4]=(TextView)findViewById(R.id.textViewOnOff5);
+        temp[4]=(TextView)findViewById(R.id.textViewTemp5);
+        cent[4]=(TextView)findViewById(R.id.textViewCent5);
+        roomtemp[4]=(TextView)findViewById(R.id.textViewRoomTemp5);
 
         email=getIntent().getStringExtra("email");
 
@@ -55,9 +90,20 @@ public class fiveroomact extends Activity {
 				if(i>= iv.length)
 					break;
 					if(r.equals("0"))
-						iv[i].setImageResource(R.drawable.hot_small);
+					{
+						//iv[i].setBackgroundResource(R.drawable.hotroom4);
+					}
 					else
-						iv[i].setImageResource(R.drawable.hot_smaller);
+						{
+							if(i==0)
+							iv[i].setBackgroundResource(R.drawable.hot_small);
+							else
+							iv[i].setBackgroundResource(R.drawable.hot_smaller);
+//						roomtemp[i].setVisibility(View.INVISIBLE);
+//						temp[i].setVisibility(View.INVISIBLE);
+						onoff[i].setText("Heating On");
+//						degree[i].setVisibility(View.INVISIBLE);
+//						cent[i].setVisibility(View.INVISIBLE);
 			i++;
 			}
 		}

@@ -33,25 +33,25 @@ public class fourroomact extends Activity implements OnClickListener {
 		cent[0]=(TextView)findViewById(R.id.textViewCent1);
 		roomtemp[0]=(TextView)findViewById(R.id.textViewRoomTemp1);
 		iv[1]=(View)findViewById(R.id.view2);
-		degree[1]=(ImageView)findViewById(R.id.ImageViewDegree2);
-		onoff[1]=(TextView)findViewById(R.id.TextViewOnOff2);
-		temp[1]=(TextView)findViewById(R.id.TextViewTemp2);
-		cent[1]=(TextView)findViewById(R.id.TextViewCent2);
-		roomtemp[1]=(TextView)findViewById(R.id.TextViewRoomTemp2);
+		degree[1]=(ImageView)findViewById(R.id.imageViewDegree2);
+		onoff[1]=(TextView)findViewById(R.id.textViewOnOff2);
+		temp[1]=(TextView)findViewById(R.id.textViewTemp2);
+		cent[1]=(TextView)findViewById(R.id.textViewCent2);
+		roomtemp[1]=(TextView)findViewById(R.id.textViewRoomTemp2);
 		
 		iv[2]=(View)findViewById(R.id.view3);
-		degree[2]=(ImageView)findViewById(R.id.ImageViewDegree3);
-		onoff[2]=(TextView)findViewById(R.id.TextViewOnOff3);
-		temp[2]=(TextView)findViewById(R.id.TextViewTemp3);
-		cent[2]=(TextView)findViewById(R.id.TextViewCent3);
-		roomtemp[2]=(TextView)findViewById(R.id.TextViewRoomTemp3);
+		degree[2]=(ImageView)findViewById(R.id.imageViewDegree3);
+		onoff[2]=(TextView)findViewById(R.id.textViewOnOff3);
+		temp[2]=(TextView)findViewById(R.id.textViewTemp3);
+		cent[2]=(TextView)findViewById(R.id.textViewCent3);
+		roomtemp[2]=(TextView)findViewById(R.id.textViewRoomTemp3);
 		
 		iv[3]=(View)findViewById(R.id.view4);
-		degree[3]=(ImageView)findViewById(R.id.ImageViewDegree4);
-		onoff[3]=(TextView)findViewById(R.id.TextViewOnOff4);
-		temp[3]=(TextView)findViewById(R.id.TextViewTemp4);
-		cent[3]=(TextView)findViewById(R.id.TextViewCent4);
-		roomtemp[3]=(TextView)findViewById(R.id.TextViewRoomTemp4);
+		degree[3]=(ImageView)findViewById(R.id.imageViewDegree4);
+		onoff[3]=(TextView)findViewById(R.id.textViewOnOff4);
+		temp[3]=(TextView)findViewById(R.id.textViewTemp4);
+		cent[3]=(TextView)findViewById(R.id.textViewCent4);
+		roomtemp[3]=(TextView)findViewById(R.id.textViewRoomTemp4);
 		for(int i=0;i<status.length;i++)
 		{
 		status[i]="0";

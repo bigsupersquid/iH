@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="312px"
+        android:layout_marginTop="23px"
         android:layout_centerInParent="true"
         android:src="@drawable/top_small" />
 
@@ -89,4 +89,4 @@
         android:textSize="70dp" />
 
 </RelativeLayout>
-<!-- From: file:/home/ack/workspace/iHeat1/app/src/main/res/layout/temp_small_center_bottom.xml -->
+<!-- From: file:/home/ack/workspace/iHeat1/app/src/main/res/layout/temp_smaller_center_top.xml -->
