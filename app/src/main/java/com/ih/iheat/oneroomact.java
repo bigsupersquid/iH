@@ -25,7 +25,7 @@ public class oneroomact extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.singleroomlayout);
+		setContentView(R.layout.oneroomlayout);
 		email=getIntent().getStringExtra("email");
 		iv[0]=(View)findViewById(R.id.view1);
 		iv[0].setOnClickListener(this);

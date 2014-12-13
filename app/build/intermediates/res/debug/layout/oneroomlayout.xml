@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/cold_main" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageViewBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/top_big" />
+
+        <ImageView
+            android:id="@+id/imageViewBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewBox"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bottom_big" />
+
+        <ImageView
+            android:id="@+id/imageViewDegree1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewBox"
+            android:layout_marginTop="36dp"
+            android:layout_toRightOf="@+id/textViewTemp1"
+            android:src="@drawable/degree" />
+
+        <TextView
+            android:id="@+id/textViewCent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewTemp1"
+            android:layout_alignBottom="@+id/textViewTemp1"
+            android:layout_toRightOf="@+id/textViewTemp1"
+            android:text="Centigrade"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewRoomTemp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textViewTemp1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:text="Room Temperature"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignTop="@+id/imageViewBar"
+            android:layout_marginTop="12dp"
+            android:text="Heating Off"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTemp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewRoomTemp1"
+            android:layout_alignTop="@+id/imageViewBox"
+            android:layout_marginTop="32dp"
+            android:text="19"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="70dp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageViewSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/setup_button_small" />
+
+    </RelativeLayout>
+<!-- From: file:/home/ack/workspace/iHeat1/app/src/main/res/layout/oneroomlayout.xml -->

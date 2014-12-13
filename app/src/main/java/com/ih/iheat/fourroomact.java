@@ -94,11 +94,11 @@ public class fourroomact extends Activity implements OnClickListener {
 					else
 						{
 						iv[i].setBackgroundResource(R.drawable.hot_small);
-						roomtemp[i].setVisibility(View.INVISIBLE);
-						temp[i].setVisibility(View.INVISIBLE);
+//						roomtemp[i].setVisibility(View.INVISIBLE);
+//						temp[i].setVisibility(View.INVISIBLE);
 						onoff[i].setText("Heating On");
-						degree[i].setVisibility(View.INVISIBLE);
-						cent[i].setVisibility(View.INVISIBLE);
+//						degree[i].setVisibility(View.INVISIBLE);
+//						cent[i].setVisibility(View.INVISIBLE);
 						}
 			i++;
 			}

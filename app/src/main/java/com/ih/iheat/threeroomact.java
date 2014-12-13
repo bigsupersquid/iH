@@ -25,26 +25,26 @@ public class threeroomact extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.threeroomlayout);
-		email=getIntent().getStringExtra("email");
+        email=getIntent().getStringExtra("email");
 		iv[0]=(View)findViewById(R.id.view1);
 		degree[0]=(ImageView)findViewById(R.id.imageViewDegree1);
 		onoff[0]=(TextView)findViewById(R.id.textViewOnOff1);
-		temp[0]=(TextView)findViewById(R.id.textViewDegree1);
+		temp[0]=(TextView)findViewById(R.id.textViewTemp1);
 		cent[0]=(TextView)findViewById(R.id.textViewCent1);
 		roomtemp[0]=(TextView)findViewById(R.id.textViewRoomTemp1);
 		iv[1]=(View)findViewById(R.id.view2);
-		degree[1]=(ImageView)findViewById(R.id.ImageViewDegree2);
-		onoff[1]=(TextView)findViewById(R.id.textViewOnOff);
-		temp[1]=(TextView)findViewById(R.id.textViewDegree2);
-		cent[1]=(TextView)findViewById(R.id.TextViewCent2);
-		roomtemp[1]=(TextView)findViewById(R.id.TextViewRoomTemp2);
+		degree[1]=(ImageView)findViewById(R.id.imageViewDegree2);
+		onoff[1]=(TextView)findViewById(R.id.textViewOnOff2);
+		temp[1]=(TextView)findViewById(R.id.textViewTemp2);
+		cent[1]=(TextView)findViewById(R.id.textViewCent2);
+		roomtemp[1]=(TextView)findViewById(R.id.textViewRoomTemp2);
 		iv[2]=(View)findViewById(R.id.view3);
-		degree[2]=(ImageView)findViewById(R.id.ImageViewDegree3);
-		onoff[2]=(TextView)findViewById(R.id.TextViewOnOff3);
-		temp[2]=(TextView)findViewById(R.id.TextViewDegree3);
-		cent[2]=(TextView)findViewById(R.id.TextViewCent3);
-		roomtemp[2]=(TextView)findViewById(R.id.TextViewRoomTemp3);
-		for(int i=0;i<status.length;i++)
+		degree[2]=(ImageView)findViewById(R.id.imageViewDegree3);
+		onoff[2]=(TextView)findViewById(R.id.textViewOnOff3);
+		temp[2]=(TextView)findViewById(R.id.textViewTemp3);
+		cent[2]=(TextView)findViewById(R.id.textViewCent3);
+		roomtemp[2]=(TextView)findViewById(R.id.textViewRoomTemp3);
+		for(int i=0;((i<status.length)&&(i<3));i++)
 		{
 		status[i]="0";
 		iv[i].setOnClickListener(this);
@@ -63,7 +63,7 @@ public class threeroomact extends Activity implements OnClickListener{
 		final ProgressDialog pd = new ProgressDialog(this);
 		pd.setMessage("loading");
 		pd.show();
-		Thread th=new Thread(new Runnable() {
+        Thread th=new Thread(new Runnable() {
 			
 			@Override
 			public void run() {
@@ -78,27 +78,25 @@ public class threeroomact extends Activity implements OnClickListener{
 		public void run()
 		{
 			int i=0;
-			while(i<result.length)
+			while((i<result.length)&&(i<3))
 			{
-				System.out.println("i is="+i+" and iv.lenght is "+ iv.length);
 				String r=result[i];
-				if(i>= iv.length)
-					break;
 					if(r.equals("0"))
-						{
-						//iv[i].setImageResource(R.drawable.offsmall);
-						}
+					{
+						//iv[i].setBackgroundResource(R.drawable.hotroom4);
+					}
 					else
+
 					{
 						if(i==0)
 						iv[i].setBackgroundResource(R.drawable.hot_big);
 						else
 						iv[i].setBackgroundResource(R.drawable.hot_small);
-						roomtemp[i].setVisibility(View.INVISIBLE);
-						temp[i].setVisibility(View.INVISIBLE);
+//						roomtemp[i].setVisibility(View.INVISIBLE);
+//						temp[i].setVisibility(View.INVISIBLE);
 						onoff[i].setText("Heating On");
-						degree[i].setVisibility(View.INVISIBLE);
-						cent[i].setVisibility(View.INVISIBLE);
+//						degree[i].setVisibility(View.INVISIBLE);
+//						cent[i].setVisibility(View.INVISIBLE);
 					}
 			i++;
 			}
@@ -125,6 +123,7 @@ public class threeroomact extends Activity implements OnClickListener{
 		else if(arg0==iv[1])
 		{
 			Intent i=new Intent(this,roomdetailact.class);
+			System.out.println("status "+status[1]);
 			i.putExtra("status",status[1]);
 			i.putExtra("roomno","2");
 			i.putExtra("email",email);

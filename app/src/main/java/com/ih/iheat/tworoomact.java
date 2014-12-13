@@ -40,7 +40,8 @@ public class tworoomact extends Activity implements OnClickListener{
 		temp[1]=(TextView)findViewById(R.id.textViewTemp2);
 		cent[1]=(TextView)findViewById(R.id.textViewCent2);
 		roomtemp[1]=(TextView)findViewById(R.id.textViewRoomTemp2);
-		for(int i=0;i<status.length;i++)
+
+        for(int i=0;i<status.length;i++)
 			{
 			status[i]="0";
 			iv[i].setOnClickListener(this);
