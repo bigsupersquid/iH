@@ -10,7 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="96dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/top_main" />
+        android:src="@drawable/top_big" />
 
     <ImageView
         android:id="@+id/imageViewBar"
@@ -19,7 +19,7 @@
         android:layout_below="@+id/imageViewBox"
         android:layout_centerInParent="true"
         android:layout_marginTop="8dp"
-        android:src="@drawable/bottom_main" />
+        android:src="@drawable/bottom_big" />
 
     <ImageView
         android:id="@+id/imageViewDegree1"

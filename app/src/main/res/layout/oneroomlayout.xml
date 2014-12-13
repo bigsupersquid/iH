@@ -12,7 +12,7 @@
         android:background="@drawable/cold_main" />
 
     < include android:id="@+id/temperature"
-        layout="@layout/temp_main" />
+        layout="@layout/temp_big_center" />
         
     <ImageView
         android:id="@+id/imageViewSetup"
