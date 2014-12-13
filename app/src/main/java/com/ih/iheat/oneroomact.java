@@ -76,7 +76,7 @@ public class oneroomact extends Activity implements OnClickListener {
 					}
 					else
 						{
-						iv[i].setBackgroundResource(R.drawable.hotone);
+						iv[i].setBackgroundResource(R.drawable.hot_main);
 						roomtemp[i].setVisibility(View.INVISIBLE);
 						t.setVisibility(View.INVISIBLE);
 						onoff[i].setText("Heating On");

@@ -83,7 +83,7 @@ public class tworoomact extends Activity implements OnClickListener{
 					}
 					else
 					{
-						iv[i].setBackgroundResource(R.drawable.hottwo);
+						iv[i].setBackgroundResource(R.drawable.hot_big);
 					roomtemp[i].setVisibility(View.INVISIBLE);
 					temp[i].setVisibility(View.INVISIBLE);
 					onoff[i].setText("Heating On");

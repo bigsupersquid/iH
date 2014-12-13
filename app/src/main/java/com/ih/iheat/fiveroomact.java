@@ -6,24 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.graphics.Matrix;
+import android.widget.ImageView.ScaleType;
 
 public class fiveroomact extends Activity {
 	ImageView iv[]=new ImageView[5];
 	ImageView setup;
 	String email;
-	@Override
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fiveroomlayout);
-		email=getIntent().getStringExtra("email");
+
 		iv[0]=(ImageView)findViewById(R.id.imageView1);
 		iv[1]=(ImageView)findViewById(R.id.imageView2);
 		iv[2]=(ImageView)findViewById(R.id.imageView3);
 		iv[3]=(ImageView)findViewById(R.id.imageView4);
 		iv[4]=(ImageView)findViewById(R.id.imageView5);
-	
-		
+
+        email=getIntent().getStringExtra("email");
+
 		setup=(ImageView)findViewById(R.id.imageViewSetup);
 		setup.setOnClickListener(new OnClickListener() {
 			
@@ -51,9 +55,9 @@ public class fiveroomact extends Activity {
 				if(i>= iv.length)
 					break;
 					if(r.equals("0"))
-						iv[i].setImageResource(R.drawable.offsmall);
+						iv[i].setImageResource(R.drawable.hot_small);
 					else
-						iv[i].setImageResource(R.drawable.onsmall);
+						iv[i].setImageResource(R.drawable.hot_smaller);
 			i++;
 			}
 		}

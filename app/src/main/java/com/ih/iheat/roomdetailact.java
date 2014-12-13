@@ -77,7 +77,7 @@ public class roomdetailact extends Activity implements OnClickListener {
 					cent.setVisibility(View.INVISIBLE);
 					temp.setVisibility(View.INVISIBLE);
 					roomtemp.setVisibility(View.INVISIBLE); */
-					screen.setBackgroundResource(R.drawable.room_on_back);
+					screen.setBackgroundResource(R.drawable.hot_main);
 					//mybar.setVisibility(View.INVISIBLE);
 					//no.setVisibility(View.INVISIBLE);
 					//onoff.setText("Heating On");
@@ -95,7 +95,7 @@ public class roomdetailact extends Activity implements OnClickListener {
 				}
 				else
 				{
-					screen.setBackgroundResource(R.drawable.room_off_back);
+					screen.setBackgroundResource(R.drawable.cold_main);
 					/*gree.setVisibility(View.VISIBLE);
 					v2.setVisibility(View.VISIBLE);
 					cent.setVisibility(View.VISIBLE);
@@ -165,7 +165,7 @@ public class roomdetailact extends Activity implements OnClickListener {
 		
 		if(!status.equals("0"))
 		{
-			screen.setBackgroundResource(R.drawable.room_on_back);
+			screen.setBackgroundResource(R.drawable.hot_main);
 			/*ppl.setVisibility(View.INVISIBLE);
 			degree.setVisibility(View.INVISIBLE);
 			v2.setVisibility(View.INVISIBLE);

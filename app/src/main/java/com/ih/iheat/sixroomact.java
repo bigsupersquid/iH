@@ -50,9 +50,9 @@ public class sixroomact extends Activity {
 				if(i>= iv.length)
 					break;
 					if(r.equals("0"))
-						iv[i].setImageResource(R.drawable.offsmall);
+						iv[i].setImageResource(R.drawable.cold_smaller);
 					else
-						iv[i].setImageResource(R.drawable.onsmall);
+						iv[i].setImageResource(R.drawable.hot_smaller);
 			i++;
 			}
 		}
