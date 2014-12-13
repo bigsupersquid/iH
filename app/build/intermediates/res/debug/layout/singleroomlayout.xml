@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageViewBox"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="36dp"
         android:layout_toRightOf="@+id/textViewTemp1"
         android:src="@drawable/degree" />
 
@@ -46,16 +46,17 @@
         android:layout_alignBottom="@+id/textViewTemp1"
         android:layout_toRightOf="@+id/textViewTemp1"
         android:text="Centigrade"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textViewRoomTemp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textViewTemp1"
+        android:layout_alignTop="@+id/textViewTemp1"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="128px"
         android:text="Room Temperature"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textViewOnOff"
@@ -63,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignTop="@+id/imageViewBar"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="16dp"
         android:text="Heating Off"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
@@ -82,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textViewRoomTemp1"
         android:layout_alignTop="@+id/imageViewBox"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="36dp"
         android:text="19"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="70dp" />
