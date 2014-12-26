@@ -64,11 +64,20 @@ public final class R {
         public static final int wifibutton=0x7f02002b;
     }
     public static final class id {
+        public static final int Bar=0x7f0a0065;
+        public static final int Box=0x7f0a0064;
+        public static final int Center=0x7f0a0063;
+        public static final int Degree=0x7f0a0066;
         public static final int ImageView01=0x7f0a004a;
+        public static final int OnOff=0x7f0a006a;
         public static final int RelativeLayout1=0x7f0a0001;
-        public static final int SecondaryProgress=0x7f0a005a;
+        public static final int RoomTemp=0x7f0a0069;
+        public static final int SecondaryProgress=0x7f0a006b;
+        public static final int Temp=0x7f0a0067;
         public static final int TextView01=0x7f0a004b;
-        public static final int action_settings=0x7f0a005c;
+        public static final int Unit=0x7f0a0068;
+        public static final int WindowSmall=0x7f0a0062;
+        public static final int action_settings=0x7f0a006d;
         public static final int buttonSave=0x7f0a0050;
         public static final int buttonSetting=0x7f0a0004;
         public static final int editText1=0x7f0a003f;
@@ -79,10 +88,6 @@ public final class R {
         public static final int imageConnect=0x7f0a003b;
         public static final int imageView1=0x7f0a004c;
         public static final int imageView2=0x7f0a0008;
-        public static final int imageView3=0x7f0a0052;
-        public static final int imageView4=0x7f0a0053;
-        public static final int imageView5=0x7f0a0054;
-        public static final int imageView6=0x7f0a0055;
         public static final int imageViewBar=0x7f0a0041;
         public static final int imageViewBar1=0x7f0a0011;
         public static final int imageViewBar2=0x7f0a0018;
@@ -96,6 +101,7 @@ public final class R {
         public static final int imageViewBox4=0x7f0a0025;
         public static final int imageViewBox5=0x7f0a002c;
         public static final int imageViewConnect=0x7f0a0009;
+        public static final int imageViewDegree=0x7f0a005e;
         public static final int imageViewDegree1=0x7f0a0012;
         public static final int imageViewDegree2=0x7f0a0019;
         public static final int imageViewDegree3=0x7f0a0020;
@@ -104,19 +110,19 @@ public final class R {
         public static final int imageViewHeatState=0x7f0a0048;
         public static final int imageViewHome=0x7f0a0044;
         public static final int imageViewRooms=0x7f0a0051;
-        public static final int imageViewSearch=0x7f0a0056;
+        public static final int imageViewSearch=0x7f0a0059;
         public static final int imageViewSetup=0x7f0a000f;
         public static final int imageViewdevice=0x7f0a0033;
         public static final int listView1=0x7f0a0003;
         public static final int parent=0x7f0a004d;
-        public static final int progress=0x7f0a005b;
+        public static final int progress=0x7f0a006c;
         public static final int progressBarLogin=0x7f0a0036;
         public static final int rel1=0x7f0a0043;
         public static final int seekBar1=0x7f0a0046;
         public static final int spinner1=0x7f0a004f;
         public static final int splashvdo=0x7f0a0000;
-        public static final int textResult=0x7f0a0059;
-        public static final int textSearch=0x7f0a0057;
+        public static final int textResult=0x7f0a005c;
+        public static final int textSearch=0x7f0a005a;
         public static final int textView1=0x7f0a0005;
         public static final int textView2=0x7f0a0006;
         public static final int textView3=0x7f0a0047;
@@ -124,11 +130,13 @@ public final class R {
         public static final int textView5=0x7f0a003a;
         public static final int textView6=0x7f0a0045;
         public static final int textView7=0x7f0a004e;
+        public static final int textViewCent=0x7f0a0060;
         public static final int textViewCent1=0x7f0a0014;
         public static final int textViewCent2=0x7f0a001b;
         public static final int textViewCent3=0x7f0a0022;
         public static final int textViewCent4=0x7f0a0029;
         public static final int textViewCent5=0x7f0a0030;
+        public static final int textViewCenter=0x7f0a005d;
         public static final int textViewLogin=0x7f0a0037;
         public static final int textViewNo=0x7f0a0049;
         public static final int textViewOnOff=0x7f0a0042;
@@ -137,12 +145,14 @@ public final class R {
         public static final int textViewOnOff3=0x7f0a0024;
         public static final int textViewOnOff4=0x7f0a002b;
         public static final int textViewOnOff5=0x7f0a0032;
+        public static final int textViewRoomTemp=0x7f0a0061;
         public static final int textViewRoomTemp1=0x7f0a0015;
         public static final int textViewRoomTemp2=0x7f0a001c;
         public static final int textViewRoomTemp3=0x7f0a0023;
         public static final int textViewRoomTemp4=0x7f0a002a;
         public static final int textViewRoomTemp5=0x7f0a0031;
         public static final int textViewSearch=0x7f0a0034;
+        public static final int textViewTemp=0x7f0a005f;
         public static final int textViewTemp1=0x7f0a0013;
         public static final int textViewTemp2=0x7f0a001a;
         public static final int textViewTemp3=0x7f0a0021;
@@ -152,11 +162,18 @@ public final class R {
         public static final int textViewdevice=0x7f0a0002;
         public static final int textWelcome=0x7f0a0035;
         public static final int view1=0x7f0a000a;
-        public static final int view12=0x7f0a0058;
+        public static final int view12=0x7f0a005b;
         public static final int view2=0x7f0a000b;
         public static final int view3=0x7f0a000c;
         public static final int view4=0x7f0a000d;
         public static final int view5=0x7f0a000e;
+        public static final int view6=0x7f0a0057;
+        public static final int window1=0x7f0a0052;
+        public static final int window2=0x7f0a0053;
+        public static final int window3=0x7f0a0054;
+        public static final int window4=0x7f0a0055;
+        public static final int window5=0x7f0a0056;
+        public static final int window6=0x7f0a0058;
     }
     public static final class layout {
         public static final int activity_splash=0x7f030000;
@@ -188,6 +205,8 @@ public final class R {
         public static final int tworoomlayout=0x7f03001a;
         public static final int viewdevicelayout=0x7f03001b;
         public static final int wifiresult=0x7f03001c;
+        public static final int window_big=0x7f03001d;
+        public static final int window_small=0x7f03001e;
     }
     public static final class menu {
         public static final int splash=0x7f090000;

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textColor="#000" >
+
+    <TextView
+        android:id="@+id/textViewCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="7px"/>
+
+    <ImageView
+        android:id="@+id/imageViewBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewCenter"
+        android:layout_centerInParent="true"
+        android:src="@drawable/top_big" />
+
+    <ImageView
+        android:id="@+id/imageViewBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCenter"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bottom_big" />
+
+    <ImageView
+        android:id="@+id/imageViewDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewTemp"
+        android:layout_marginTop="12px"
+        android:layout_toRightOf="@+id/textViewTemp"
+        android:src="@drawable/degree" />
+
+    <TextView
+        android:id="@+id/textViewCent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTemp"
+        android:layout_alignBottom="@+id/textViewTemp"
+        android:layout_toRightOf="@+id/textViewCenter"
+        android:layout_marginLeft="4px"
+        android:text="Centigrade"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewRoomTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignBottom="@+id/imageViewBox"
+        android:layout_marginBottom="12px"
+        android:text="Room Temperature"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@+id/imageViewBar"
+        android:layout_marginTop="12px"
+        android:text="Heating Off"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTemp"
+        android:layout_alignTop="@+id/imageViewBox"
+        android:layout_toLeftOf="@+id/textViewCenter"
+        android:layout_marginRight="4px"
+        android:layout_marginTop="12px"
+        android:text="19"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="70px" />
+
+</RelativeLayout>

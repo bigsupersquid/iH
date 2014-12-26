@@ -3,78 +3,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="341px"
-        android:layout_height="270px"
+        android:layout_height="299px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+    <ImageView
+        android:id="@+id/view1"
+        android:layout_width="341px"
+        android:layout_height="299px"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:maxWidth="341px"
-        android:maxHeight="270px"
+        android:maxHeight="299px"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/cold_smaller" />
-
-    <ImageView
-        android:id="@+id/imageView2"
+        android:background="@drawable/cold_smaller" />
+    <include layout="@layout/window_small"
+        android:id="@+id/window1" />
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="341px"
-        android:layout_height="270px"
+        android:layout_height="299px"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        >
+    <ImageView
+        android:id="@+id/view2"
+        android:layout_width="341px"
+        android:layout_height="299px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:maxWidth="341px"
-        android:maxHeight="270px"
+        android:maxHeight="299px"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/cold_smaller" />
+        android:background="@drawable/cold_smaller" />
+    <include layout="@layout/window_small"
+        android:id="@+id/window2" />
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="341px"
+        android:layout_height="299px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        >
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/view3"
         android:layout_width="341px"
-        android:layout_height="270px"
+        android:layout_height="299px"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:maxWidth="341px"
-        android:maxHeight="270px"
+        android:maxHeight="299px"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/cold_smaller" />
-
-    <ImageView
-        android:id="@+id/imageView4"
+        android:background="@drawable/cold_smaller" />
+    <include layout="@layout/window_small"
+        android:id="@+id/window3" />
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="341px"
-        android:layout_height="270px"
+        android:layout_height="299px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        >
+    <ImageView
+        android:id="@+id/view4"
+        android:layout_width="341px"
+        android:layout_height="299px"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:maxWidth="341px"
-        android:maxHeight="270px"
+        android:maxHeight="299px"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/cold_smaller" />
-
-    <ImageView
-        android:id="@+id/imageView5"
+        android:background="@drawable/cold_smaller" />
+    <include layout="@layout/window_small"
+        android:id="@+id/window4" />
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="341px"
-        android:layout_height="270px"
+        android:layout_height="299px"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        >
+    <ImageView
+        android:id="@+id/view5"
+        android:layout_width="341px"
+        android:layout_height="299px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:maxWidth="341px"
-        android:maxHeight="270px"
+        android:maxHeight="299px"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/cold_smaller" />
-
-    <ImageView
-        android:id="@+id/imageView6"
+        android:background="@drawable/cold_smaller" />
+    <include layout="@layout/window_small"
+        android:id="@+id/window5" />
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="341px"
-        android:layout_height="270px"
+        android:layout_height="299px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+    <ImageView
+        android:id="@+id/view6"
+        android:layout_width="341px"
+        android:layout_height="299px"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:maxWidth="341px"
-        android:maxHeight="270px"
+        android:maxHeight="299px"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:src="@drawable/cold_smaller" />
-
+        android:background="@drawable/cold_smaller" />
+    <include layout="@layout/window_small"
+        android:id="@+id/window6" />
+</RelativeLayout>
     <ImageView
         android:id="@+id/imageViewSetup"
         android:layout_width="wrap_content"
